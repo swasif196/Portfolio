@@ -1,0 +1,3 @@
+Below is the android version of the app I developed in flutter with my team fro a client. Payment method has not yet been fully set up as per client request.
+
+Bakist - https://play.google.com/store/apps/details?id=com.bakist.innovanza

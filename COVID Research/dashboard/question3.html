@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+
+    <title>COVID-19 | The Digital Divide</title>
+    <link rel="icon" type="image/png" href="../img/favicon.ico">
+
+    <!-- Custom fonts for this template-->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="../css/sb-admin-2.css" rel="stylesheet">
+    <link href="../css/our-style.css" rel="stylesheet">
+    <link href="../css/dashboard/q3BoxPlot.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+        <!-- Sidebar - Brand -->
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../index.html">
+            <div class="sidebar-brand-icon">
+                <img class="mb-2" id="our-logo" src="../img/our-logo.png" alt="">
+            </div>
+        </a>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <!-- Nav Item - Issue -->
+        <li class="nav-item active">
+            <a class="nav-link" href="../index.html">
+                <i class="fas fa-fw fa-chalkboard"></i>
+                <span>The Issue</span></a>
+        </li>
+
+        <!-- Nav Item - Dashboard Collapse Menu -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+               aria-expanded="true" aria-controls="collapseTwo">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Dashboard</span>
+            </a>
+            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="question1.html">Question 1</a>
+                    <a class="collapse-item" href="question2.html">Question 2</a>
+                    <a class="collapse-item" href="question3.html" style="background-color: #eaecf4;">Question 3</a>
+                    <a class="collapse-item" href="question4.html">Question 4</a>
+                    <a class="collapse-item" href="question5.html">Question 5</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- Nav Item - Lit Review -->
+        <li class="nav-item active">
+            <a class="nav-link" href="../litreview.html">
+                <i class="fas fa-fw fa-book"></i>
+                <span>Lit Review</span></a>
+        </li>
+
+        <!-- Nav Item - About Us -->
+        <li class="nav-item active">
+            <a class="nav-link" href="../about.html">
+                <i class="far fa-smile"></i>
+                <span>About Us</span></a>
+        </li>
+
+        <!-- Nav Item - Help -->
+        <li class="nav-item active">
+            <a class="nav-link" href="help.html">
+                <i class="fas fa-hands-helping"></i>
+                <span>You can Help!</span></a>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="text-center d-none d-md-inline toggler">
+            <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+            <!-- Begin Page Content -->
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="d-sm-flex align-items-center justify-content-between page-header-questions">
+                    <h1 class="h1 mb-0 text-gray-800">Question 3</h1>
+                </div>
+                <div class="d-sm-flex align-items-center justify-content-between mt-0">
+                    <h3 class="h3 mb-0 text-gray-500">Has there been a change in the <b>academic performance</b> of
+                        children in <b>lower-income</b> households <b>before VS during</b> the COVID-19 pandemic?</h3>
+                </div>
+                <br>
+                <hr>
+                <!-- Content Row -->
+                <div class="row">
+
+                    <div class="col-xl-12 col-lg-12">
+                        <div class="card shadow mb-4">
+                            <!-- Card Header - Dropdown -->
+                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="h4 m-0 font-weight-bold text-primary">Low-Income Student Study Time Overview</h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="card-body">
+                                <figure class="highcharts-figure">
+                                    <div id="container"></div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Study Time Cards  -->
+                    <div class="col-x6 col-md-6 mb-4">
+                        <div class="card border-left-info shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-s font-weight-bold text-info text-uppercase mb-1">
+                                            Average Time Spent Studying Pre-COVID
+                                        </div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">3.88 hours</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-clock fa-2x text-gray-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-md-6 mb-4">
+                        <div class="card border-left-info shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-s font-weight-bold text-info text-uppercase mb-1">
+                                            Average Time Spent Studying during COVID
+                                        </div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">4.58 hours</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-clock fa-2x text-gray-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Row -->
+
+                    <!-- Area Chart -->
+                    <div class="col-xl-12 col-lg-12">
+                        <div class="card shadow mb-4">
+                            <!-- Card Header - Dropdown -->
+                            <div class="h4 card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">Average Low-Income Student Study Time</h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="card-body">
+                                <div class="chart-bar">
+                                    <canvas id="q3BarChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- T-test Results Cards  -->
+                    <div class="col-x6 col-md-4 col-sm-1 mb-4">
+                        <div class="card border-left-info shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-s font-weight-bold text-info text-uppercase mb-1">
+                                            t
+                                        </div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">-3.2764</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-x6 col-md-4 col-sm-1 mb-4">
+                        <div class="card border-left-info shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-s font-weight-bold text-info text-uppercase mb-1">
+                                            Degrees of freedom
+                                        </div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">35.978</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-x6 col-md-4 col-sm-1 mb-4">
+                        <div class="card border-left-info shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-s font-weight-bold text-info text-uppercase mb-1">
+                                            p-value
+                                        </div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">0.0023333</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <!-- Content Column -->
+                        <div class="col-lg-12 mb-2 push-right">
+                            <!-- Methodology -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="h4 m-0 font-weight-bold text-primary">Methodology</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>To answer this question, we performed Welch's two sample T-Test to compare the average
+                                        academic performance of low SES from before the pandemic to during. Our null hypothesis,
+                                        is that the average time spent studying between the pre-pandemic and during pandemic
+                                        group is equal. Our alternative hypothesis is that the average time spent studying between
+                                        the two groups is statistically significantly different. We used this method because we felt
+                                        it was the most appropriate way to determine if there is a significant difference between the
+                                        means of the two groups.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 mb-2 push-right">
+                            <!-- Results -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="h4 m-0 font-weight-bold text-primary">Results</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>Our results indicate that the true difference in means is not equal to 0. The
+                                        study time for low-income populations has increased as a result of COVID-19 school
+                                        disruptions, and is considered statistically significant.
+                                        The results of this question will be analyzed alongside the results of Question 4
+                                        and 5 to determine if the study time of lower income households is statistically different
+                                        than non-lower income households and if low-income populations are more vulnerable to changes than
+                                        their higher income counterparts.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 mb-2 push-right">
+                            <!-- Results -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="h4 m-0 font-weight-bold text-primary">Limitations</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>One major limitation of this source is that we had unequal sample sizes for the
+                                        pre COVID and during COVID populations. Although we had substantial data points for
+                                        pre COVID, the during COVID group only had 4 observations. We could have greater confidence
+                                        in our study with a larger sample size.</p>
+                                    <p>A second limitation is that we used two different sources to gather data regarding study time
+                                        before vs during COVID. These two sources had differences in data collection methodology, and had slight
+                                        differences in what qualifies as study time.</p>
+                                    <p>Finally, these sources were also international as opposed to Canada specific. The IFS data was primarily
+                                        from the UK, and the OECD drew from a variety of international countries including the UK and Canada.
+                                        This makes it more challenging to apply the findings to a Canadian context.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 mb-4 push-right">
+                            <!-- Results -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="h5 m-0 font-weight-bold text-primary">References and Sources</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>Andrew, Alison, et al. “Learning During the Lockdown: Real-Time Data on
+                                        Children’s Experiences during Home Learning.” <i>Institute for Financial
+                                            Studies</i>, (2020): 1-23. doi: 10.1920/BN.IFS.2020.BN0288.</p>
+                                    <p>“Does Homework Perpetuate Inequalities in Education.” <i>Organisation for
+                                        Economic Cooperation and Development</i>, (2012): 1-4. https://doi.org/10.1787/5jxrhqhtx2xt-en.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>Copyright &copy; CIS*4020 Group 5 [2020]</span>
+                </div>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- Bootstrap core JavaScript-->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="../js/sb-admin-2.js"></script>
+<script src="../js/our-js.js"></script>
+
+<!-- Page level plugins -->
+<script src="../vendor/chart.js/Chart.min.js"></script>
+
+<!-- Page level custom scripts -->
+<script src="../js/dashboard/question3.js"></script>
+<script src="../js/dashboard/q3BoxPlot.js"></script>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+</body>
+
+</html>

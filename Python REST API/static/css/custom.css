@@ -1,0 +1,38 @@
+/*
+Sohaib Wasif
+*/
+body {
+    background-color: #191970;
+}
+.input {
+    color: black;
+}
+
+table, tr, td {
+    
+    color: yellow;
+    text-align: start;
+    text-transform: capitalize;
+    text-emphasis: bold;
+}
+th {
+    color: yellow;
+    text-align: center;
+    
+}
+td {
+    padding: 12px;
+}
+table.center {
+    margin-left: auto; 
+    margin-right: auto;
+}
+#disp {
+    max-width: 50%;
+}
+
+div.center {
+    margin-left: auto; 
+    margin-right: auto;
+}
+

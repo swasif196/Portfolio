@@ -1,0 +1,77 @@
+<!--
+Sohaib Wasif
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="shortcut icon" href="#">
+		<title>Stocks Live Prices</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href="/css/cover.css" rel="stylesheet">
+		<link href="/css/custom.css" rel="stylesheet">
+	</head>
+
+	<body>
+        {% if session['logged_in']%}
+        <p class='lead'> Welcome to Stocks Live {{session['email']}}. You are logged in!!!</p>
+        <a href="/logout" class="btn btn-danger">Logout</a><br><br>
+        <form id="form">
+          <fieldset id="field">
+            <legend style="color:white;">Stock Prices</legend>
+            <label>Enter Stock Symbol</label>
+            <input style="color:black;" id="symbol"type="text" placeholder="Enter Symbol" required><br><br>
+            <input type="radio" id="tsx" name="opts" value="Canadian Stocks (TSX and others)">
+            <label for="tsx" style="padding-right: 58px;">Canadian Stocks (TSX and others)</label><br><br>
+            <input type="radio" id="nyse" name="opts" value="US Stocks (NYSE, NASDAQ and others)">
+            <label for="nyse" style="padding-right: 22px;">US Stocks (NYSE, NASDAQ and others)</label><br><br>
+            <button id="submit" for="symbol" type="submit" class="btn" style="color: black;">Get Info</button>
+            <br><br>
+          </fieldset>
+        </form>
+        <div class="center" id="disp"></div>
+        <br><br>
+    {% else %}
+        
+        <form style="padding-left: 350px; padding-right: 350px;" action = "/login" method="POST">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" name ="email" aria-describedby="emailHelp" required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="pass">Password</label>
+            <input type="password" class="form-control" id="pass" name="pass" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        {% if error %}
+            <p>{{error}}</p>
+        {% else %}
+            <p></p>
+        {% endif %}
+        
+    {% endif %}
+    <br><br>
+    <a href="/view">Click to view all emails and passwords</a>
+        
+        <div class="footer" style="padding: 12px">
+            <p style="text-align: left;">Sohaib Wasif<br>
+            <p style="text-align: left">Stocks Live</p>
+        </div>
+
+      <script src="/js/jquery.min.js"></script>
+      <script src="/js/bootstrap.min.js"></script>
+      <script src="/js/init.js"></script>
+	</body>
+</html>

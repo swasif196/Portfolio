@@ -1,0 +1,28 @@
+Sohaib Wasif
+
+
+*************Question 1 Dynamic Programming*************
+
+For Question 1 I followed the algorithm mentioned in the text book for optimal BST's. After Reading in all the words from the file I sort them Alphabetically. I have a separate array for words and separate array for frequency for those words. I generate a root table using the function found in q1.c and use that to generate a BST using the create tree function implemented in main.c. In the createTree function after creating the root I recursively build the right and left sub-trees.
+
+*************Question 2 Greedy Algorithm*****************
+
+For Question 2, my array of words was already sorted alphabetically. I sorted it using frequency from highest to lowest for the greedy algorithm. I used a for loop to insert each word into the tree recursively based on it's frequency and alphabetical order. I generated a second optimal BST called root2 using the recursive function implemented in q2.c.
+
+*************Search And Display**************************
+
+The function named search implemented in main.c recurses through each generated BST to search for the word user is looking for ad displays corresponding messages as shown in the Assignment Guide and at the end of the search notifies the user if the word they were looking for was found or not.
+
+*************Word Frequency*******************************
+
+The formula I used for the frequency is (# of times word repeated / 2045) x 100
+
+2045 is the total number of words word instances as mentioned in the assignment description. I am multiplying the frequency by 100 because some words have very low frequency and it might be show up as 0 as I am only displaying up to 4 decimal places.
+
+*************Compilation and Running the Program*************
+
+My make file will compile the program when make is typed and create an executable called main.
+For the make file to successfully compile main.c, q1.c, q2.c, a4.h, and data_7.txt must all be present in the same directory.
+
+When my program is run it will first run Question 1 and then it will run Question 2.
+Some of the Array Sizes are hard coded in my program and they only correspond to data_7.txt. If you wish to use another test file you will have to modify/change those array sizes. Also, even if you use a different data file for testing please leave data_7.txt in the directory otherwise my program will not compile with my make file.
